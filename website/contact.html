@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 80px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>MINOR PROJECT<br>WEBSITE ON ONLINE MOBILE SHOPPING</h1>
+  <p>Under the guidance of MS.Swati Rehal</p>
+  <p>GURU NANAK DEV INTITUTE OF TECHNOLOGY</p>
+</div>
+
+<h2 style="text-align:center">PROJECT DETAILS</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="certificate.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Certificate</h2>
+        <p class="title">Html,Css & javascript<br>Deepak Bhardwaj<br>00726518118</p>
+        <p></p>
+        <p>jane@example.com</p>
+        <p> <a href="certificate.jpg" class="button">Download</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="synopsis.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Synopsis IT</h2>
+        <p class="title">Deepak Bhardwaj<br>00726518118</p>
+        <p></p>
+        <p>mike@example.com</p>
+      <p> <a href="SYNOPSIS ON IT.docx" class="button">Download</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="report .jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Project Report IT</h2>
+        <p class="title">Deepak Bhardwaj<br>00726518118</p>
+        <p></p>
+        <p>john@example.com</p>
+        <p> <a href="SYNOPSIS ON IT.docx" class="button">Download</a></p>
+      </div>
+    </div>
+  </div>           
+</div>
+
+</body>
+</html>
