@@ -2,126 +2,158 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color:#f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-  box-sizing: border-box;
+.header {
+  padding: 1px 6px;
+  background:black;
+  color: #f1f1f1;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.content {
+  padding: 16px;
 }
 
-.column {
-  float: left;
-  width: 30%;
-  margin-bottom: 10px;
-  padding: 0 8px;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 10%;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
+.sticky + .content {
+  padding-top: 102px;
 }
-
 .about-section {
   padding: 80px;
   text-align: center;
   background-color: #474e5d;
   color: white;
 }
-
-.container {
-  padding: 0 16px;
+.flip-card {
+  background-color: transparent;
+  width: 10%;
+  height: 70%;
+  perspective: 1000px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+.flip-card-inner {
+  position: relative;
   width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.button:hover {
-  background-color: #555;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:black;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h2
+{
+  color: #f1f1f1;
+}
+h3{
+  color: #555;
+} 
+
+
 </style>
 </head>
 <body>
-
-<div class="about-section">
-  <h1>MINOR PROJECT<br>WEBSITE ON ONLINE MOBILE SHOPPING</h1>
-  <p>Under the guidance of MS.Swati Rehal</p>
-  <p>GURU NANAK DEV INTITUTE OF TECHNOLOGY</p>
-</div>
-
-<h2 style="text-align:center">PROJECT DETAILS</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="certificate.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Certificate</h2>
-        <p class="title">Html,Css & javascript<br>Deepak Bhardwaj<br>00726518118</p>
-        <p></p>
-        <p>jane@example.com</p>
-        <p> <a href="certificate.jpg" class="button">Download</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="synopsis.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Synopsis IT</h2>
-        <p class="title">Deepak Bhardwaj<br>00726518118</p>
-        <p></p>
-        <p>mike@example.com</p>
-      <p> <a href="SYNOPSIS ON IT.docx" class="button">Download</a></p>
-      </div>
-    </div>
+  <div class="about-section">
+    <h1>Electronic'S Villa<br> ONLINE MOBILE SHOPPING</h1>
+    <p></p>
+    <p>GURU NANAK DEV INTITUTE OF TECHNOLOGY</p>
   </div>
   
-  <div class="column">
-    <div class="card">
-      <img src="report .jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>Project Report IT</h2>
-        <p class="title">Deepak Bhardwaj<br>00726518118</p>
-        <p></p>
-        <p>john@example.com</p>
-        <p> <a href="SYNOPSIS ON IT.docx" class="button">Download</a></p>
-      </div>
-    </div>
-  </div>           
+
+<div class="header" id="myHeader">
+  <h2><i class="fa fa-github" style="font-size:48px;color:white">Electronic's Villa</i></h2>
 </div>
 
-</body>
-</html>
+<div class="content">
+  <h2 style="text-align:center "></h2>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="canva2.jpg" alt="Avatar" style="width:30% height:10%";>
+      </div>
+      <div class="flip-card-back">
+        <h1></h1> 
+        <h2> </h2>
+        <p></p> 
+        <p></p>
+      </div>
+    </div>
+    <img src="ELECTRONIC'S VILLA (1).gif" alt="Avatar" style="width:20% height:10%";>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="canva2.jpg" alt="Avatar" style="width:20%;height:10%;">
+        </div>
+        <div class="flip-card-back">
+          <h1></h1> 
+          <h1></h1> 
+          <p></p> 
+          <p></p>
+          
+
+        </div>
+
+
+        <div class="header" id="myHeader">
+          <h2><i class="fa fa-github" style="font-size:48px;color:rgb(10, 10, 10)">Electronic's Villa</i></h2>
+        </div>
+            
+      
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+  </body>
+  </html>
+  

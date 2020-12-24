@@ -75,52 +75,136 @@ body {
   width: 100%;
   padding: 25px;
 }
+.footer {
+   position:unset;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50;
+   background-color:#333;
+   color: white;
+   text-align: center;}
+
+   body {
+
+
+     padding-right: 0px 0px 60px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background:#3ac7ff;
+    color: #f1f1f1;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  .about-section {
+    padding: 80px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h1{
+  color: white;
+}
+
+
+
+
+
 </style>
 </head>
 <body>
 
-<div class="navbar">
-    <a href="home.html"><i class="fa fa-fw fa-home"></i>HOME</a>
-  <a href="aboutus.html" class="right"><i class="fa fa-id-card-o" aria-hidden="true"></i>About us</a>
-  <a href="login.html" class="right"><i class="fa fa-fw fa-user"></i>Login</a>
-  <a href="contact.html" class="right"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-  <a href="offers.html" class="right"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Offers</a>
-</div>      
-
-<div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:420px;"><img src ="deepak.jpg"></div>
-    <p>Destination always depends upon  dreams & goals..</p>
-    <h3>Personal Information</h3>
-    <p>never give up without a fight.......</p>
-      
-    <div class="fakeimg" style="height:60px;">I  am a talented, ambitious and hardworking individual, with broad skills and experience in digital and printed marketing, social media and leading projects.</div>
-    <div class="fakeimg" style="height:60px;"></div><br>
-    <div class="fakeimg" style="height:60px;">I am able to handle multiple tasks on a daily basis</div><br>
-    <div class="fakeimg" style="height:60px;">I use a creative approach to problem solve.</div><br>
-    <div class="fakeimg" style="height:60px;">I am flexible in my working hours, being able to work evenings and weekends.</div><br>
-    <div class="fakeimg" style="height:60px;">If you want to follow me on social networking sites...then click on various social icons..<br><br><br><a href="https://www.facebook.com/profile.php?id=100016477507093"  class="fa fa-facebook-square" style="font-size:40px;color:blue">Deepak bhardwaj</a><br>
-        <br><a href="https://www.instagram.com/deepak_2201/" class="fa fa-instagram"  style="font-size:40px;color:red">Deepak_2201</a><br>
-           <br> <a href="https://twitter.com/Deepak96437622" class="fa fa-twitter-square" style="font-size:40px;color:deepskyblue">Deepak96437622</a><br>
-       <br><a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-square"  style="font-size:40px;color:yellow">galliventer2201</a></div>
-    </div>
-      <div class="main">
-    <h2>SCHOOL</h2>
-    <h5>Shaheed captain sanjeev dahiya </h5>
-    <div class="fakeimg" style="height:340px;"><img src ="School.jpg" height="300px" width="100%"></div>
-    <p></p>
-    <p></p>
-    <br>
-    <h2>COLLAGE</h2>
-    <h5>Guru nanak dev institute of technology, </h5>
-    <div class="fakeimg" style="height:380px;"><img src ="university.jpg" height="350px" width="100%"></div>
+ 
+  
+  <div class="about-section">
+    <h1>Electronic'S Villa<br> ONLINE MOBILE SHOPPING</h1>
     <p></p>
     <p></p>
   </div>
-</div>
+  
+  
 
+       
+    <div class="navbar">
+      <div class="topnav">
+<a class="active" href="home.html"><i class="fa fa-fw fa-home"></i>HOME</a>
+   
+
+<a href="https://www.instagram.com/deepak_2201/"class="right" > <i class="fa fa-instagram"  style="font-size:20px;color:red"></i></a>
+<a href="https://twitter.com/Deepak96437622"class="right" > <i class="fa fa-twitter-square"  style="font-size:20px;color:#3ac7ff"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100016477507093"class="right" > <i class="fa fa-facebook"  style="font-size:20px;color:blue"></i></a>
+<a href="https://accounts.snapchat.com/accounts/snapcodes"class="right" > <i class="fa fa-snapchat-square"  style="font-size:20px;color:yellow"></i></a>
+
+</div>
+    </div>
+    
+  <div class="content">
+    <h3></h3>
+
+  <div class="header" id="myHeader">
+    <h2><i class="fa fa-github" style="font-size:48px;color:rgb(8, 8, 8)">Electronic's Villa</i></h2>
+  </div>
+
+  <img src="hiiii.gif">
+  
 </body>
 </html>
-Sep 2, 2017
